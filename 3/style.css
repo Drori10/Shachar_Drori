@@ -23,4 +23,13 @@ select
     background-color: lightblue;
     color: whitesmoke;
     display: block;
+    width: 320px;
+    padding: 10px;
+    margin: 0;
+}
+.classB
+{
+    margin: auto;
+    width: 30%;
+    padding: 10px;
 }
