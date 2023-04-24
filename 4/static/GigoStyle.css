@@ -1,0 +1,61 @@
+:root{
+    --MyBlue: #334195;
+    --Border: #1985A1;
+}
+@font-face {
+    font-family: TrySeuz;
+    src: url(Suez_One/SuezOne-Regular.ttf);
+}
+
+*{
+    font-family: TrySeuz;
+    color:blanchedalmond;
+    padding: 1vw;
+}
+
+body{
+    background-color: var(--MyBlue);
+    border: 5px solid var(--Border) ;
+}
+
+.type2 {
+    background-image: url(spongebob.jpeg);
+}
+.type3 {
+    background-image: linear-gradient(to right,#00B4D8,#0096C7,#0077B6,#023E8A);
+    border: 5px solid var(--Border) ;
+}
+
+.GridContainer{
+    display:grid;
+    text-align: center;
+    grid-template-areas:
+     'top_left top_right top_right'
+     'bottom_all bottom_all bottom_right'
+}
+
+.item1 {
+    grid-area: top_left;
+  }
+.item2 {
+    grid-area: top_right;
+  }
+.item3{
+    grid-area: bottom_all;
+  }
+.item4{
+    grid-area: bottom_right;
+ }
+
+ @keyframes Strobe
+ {
+    0% {color: #38b000;}
+    50% {color: #006400;}
+    100% {color: #38b000;}
+ }
+
+h1{
+    animation-name: Strobe;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
