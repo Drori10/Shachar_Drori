@@ -26,32 +26,23 @@ body{
     border: 5px solid var(--Border) ;
 }
 
-.GridContainer{
-    display:grid;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+  }
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
     text-align: center;
-    grid-template-areas:
-     'top_left top_right top_right'
-     'bottom_all bottom_all bottom_right'
-}
-
-.item1 {
-    grid-area: top_left;
   }
-.item2 {
-    grid-area: top_right;
-  }
-.item3{
-    grid-area: bottom_all;
-  }
-.item4{
-    grid-area: bottom_right;
- }
-
  @keyframes Strobe
  {
-    0% {color: #38b000;}
-    50% {color: #006400;}
-    100% {color: #38b000;}
+    0% {color: #ffffff;}
+    25% {color: #ffffff00;}
+    50% {color: #ffffff;}
+    75% {color: #ffffff00;}
+    100% {color: #ffffff;}
  }
 
 h1{
